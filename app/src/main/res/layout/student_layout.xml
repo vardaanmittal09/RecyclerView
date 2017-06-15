@@ -19,4 +19,5 @@
         android:id="@+id/tvCourse"
         android:textSize="20dp"
         />
-</LinearLayout>
+
+    </LinearLayout>

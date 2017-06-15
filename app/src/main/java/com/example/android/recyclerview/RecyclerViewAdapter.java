@@ -24,9 +24,27 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
+    public int getItemViewType(int position) {
+        Student this_student =studentArrayList.get(position);
+        if(this_student.getCourse().equals("Pandora")){
+            return 0;
+        }
+        return 1;
+    }
+
+    @Override
+
     public StudentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        //null case on create
+        int layoutType;
+        if(viewType==0){
+            layoutType=R.layout.student_layout;
+        }
+        else{
+            layoutType=R.layout.student_layout_right;
+        }
         LayoutInflater li= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View itemView=li.inflate(R.layout.student_layout,parent,false);
+        View itemView=li.inflate(layoutType,parent,false);
         StudentViewHolder studentViewHolder=new StudentViewHolder(itemView);
         return studentViewHolder;
     }
