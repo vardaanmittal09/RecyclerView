@@ -13,12 +13,12 @@ import java.util.ArrayList;
  * Created by lenovo on 6/15/2017.
  */
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.StudentViewHolder> {
+public class studentRecyclerAdapter extends RecyclerView.Adapter<studentRecyclerAdapter.StudentViewHolder> {
 
     ArrayList<Student> studentArrayList;
     Context context;
 
-    public RecyclerViewAdapter(ArrayList<Student> studentArrayList, Context context) {
+    public studentRecyclerAdapter(ArrayList<Student> studentArrayList, Context context) {
         this.studentArrayList = studentArrayList;
         this.context = context;
     }
@@ -70,7 +70,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
             tvName= (TextView) itemView.findViewById(R.id.tvName);
             tvCourse=(TextView)itemView.findViewById(R.id.tvCourse);
-
 
         }
     }
