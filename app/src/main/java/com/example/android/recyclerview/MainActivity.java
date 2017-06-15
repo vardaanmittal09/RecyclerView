@@ -36,6 +36,32 @@ public class MainActivity extends AppCompatActivity {
         student.add(new Student("F","Elixir"));
         student.add(new Student("G","Pandora"));
         student.add(new Student("H","Elixir"));
+        student.add(new Student("A","Pandora"));
+        student.add(new Student("B","Elixir"));
+        student.add(new Student("C","Pandora"));
+        student.add(new Student("D","Elixir"));
+        student.add(new Student("E","Pandora"));
+        student.add(new Student("F","Elixir"));
+        student.add(new Student("G","Pandora"));
+        student.add(new Student("H","Elixir"));
+        student.add(new Student("A","Pandora"));
+        student.add(new Student("B","Elixir"));
+        student.add(new Student("C","Pandora"));
+        student.add(new Student("D","Elixir"));
+        student.add(new Student("E","Pandora"));
+        student.add(new Student("F","Elixir"));
+        student.add(new Student("G","Pandora"));
+        student.add(new Student("H","Elixir"));
+        student.add(new Student("A","Pandora"));
+        student.add(new Student("B","Elixir"));
+        student.add(new Student("C","Pandora"));
+        student.add(new Student("D","Elixir"));
+        student.add(new Student("E","Pandora"));
+        student.add(new Student("F","Elixir"));
+        student.add(new Student("G","Pandora"));
+        student.add(new Student("H","Elixir"));
+
+
         return  student;
     }
 }
